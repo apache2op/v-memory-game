@@ -1,4 +1,4 @@
-const baseImages = Array.from({ length: 18 }, (_, i) => `/game-photos/${i + 1}.avif`);
+const baseImages = Array.from({ length: 18 }, (_, i) => `game-photos/${i + 1}.avif`);
 const images = [...baseImages, ...baseImages].sort(() => Math.random() - 0.5);
 
 const heartLayout = [
@@ -148,3 +148,4 @@ function checkOrientation() {
 
 window.addEventListener("resize", checkOrientation);
 checkOrientation();
+
